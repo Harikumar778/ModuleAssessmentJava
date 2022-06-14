@@ -30,7 +30,7 @@ public class MovieTable {
 
     PreparedStatement ps= cnctn.prepareStatement("insert into movie values(?,?,?)");
   
-    ps.setString(1,m.getMovieName()); // here 1 is ? number  
+    ps.setString(1,m.getMovieName());  
     ps.setFloat(2,m.getBudget());
     ps.setFloat(3,m.getRating());
 
