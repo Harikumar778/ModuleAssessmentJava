@@ -1,3 +1,5 @@
+// 1) Use case-1
+
 package utility;
 
 import java.util.Scanner;
@@ -43,3 +45,13 @@ public class UserDetails {
 	}
 
 }
+
+// Output:
+// =============
+// Enter the Email 
+// Harsha@123.varDhan
+// Number of Capital Letters : 2
+// Number of Small Letters : 11
+// Number of Digits : 3
+// Number of Special Symbols : 2
+
