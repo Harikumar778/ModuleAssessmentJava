@@ -1,3 +1,5 @@
+// 2) Use case- 2
+	
 package beans;
 
 public class TestMovie {
@@ -12,3 +14,11 @@ public class TestMovie {
 	}
 
 }
+
+
+// Output:
+// ================
+// Name of the Movie : Vikram
+// Budget of the Movie : 2000000
+// Rating of the Movie :  4.8
+
