@@ -1,0 +1,133 @@
+Q1. What will be the output of the program?
+
+public void foo( boolean a, boolean b)
+{ 
+    if( a ) 
+    {
+        System.out.println("A"); /* Line 5 */
+    } 
+    else if(a && b) /* Line 7 */
+    { 
+        System.out.println( "A && B"); 
+    } 
+    else /* Line 11 */
+    { 
+        if ( !b ) 
+        {
+            System.out.println( "notB") ;
+        } 
+        else 
+        {
+            System.out.println( "ELSE" ) ; 
+        } 
+    } 
+}
+
+A. If a is true and b is true then the output is "A && B"
+B. If a is true and b is false then the output is "notB"
+C. If a is false and b is true then the output is "ELSE"
+D. If a is false and b is false then the output is "ELSE"
+
+=============================================================================================
+
+Answer: C (If a is false and b is true then the output is "ELSE")
+
+=============================================================================================
+
+
+Q2. What will be the output of the program?
+
+public void test(int x) 
+{ 
+    int odd = 1; 
+    if(odd) /* Line 4 */
+    {
+        System.out.println("odd"); 
+    } 
+    else 
+    {
+        System.out.println("even"); 
+    } 
+}
+
+Which statement is true?
+A. Compilation fails.
+B. "odd" will always be output.
+C. "even" will always be output.
+D. "odd" will be output for odd values of x, and "even" for even values.
+
+=============================================================================================
+
+Answer:  A (Compilation fails)
+
+=============================================================================================
+
+Q3. What is the output of the program
+class A
+{
+static int x=10;
+A()
+{
+x++;
+System.out.println(x);
+}
+
+}
+
+class B
+{
+public static void main(String args[])
+{
+A a1=new A();
+
+A a2=new A();
+
+A a3=new A();
+}
+}
+
+A. 
+11
+12
+13
+B. compilation error
+C.
+11
+11
+11
+D.
+10
+11
+12
+
+=============================================================================================
+
+Answer:  A (11 12 13)
+
+=============================================================================================
+
+Q4. What will be the output of the following program?
+class B
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.println(1/0);
+        }
+        System.out.println("Hello ");
+        catch(ArithmeticException e)
+        {
+            System.out.println("Welcome");      }    }}
+=
+
+1. Hello 
+2. Hello 
+Welcome
+3. Run-time Exception
+4. Compile-time error
+=============================================================================================
+
+Answer: D (Compile-time error)
+
+=============================================================================================
