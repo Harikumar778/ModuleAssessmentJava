@@ -33,13 +33,10 @@ public class MovieTable {
     ps.setString(1,m.getMovieName());  
     ps.setFloat(2,m.getBudget());
     ps.setFloat(3,m.getRating());
-
-
-
+			
 
     ps.executeUpdate();
  
-    //close connection
     cnctn.close();
 
 } catch (SQLException e) {
