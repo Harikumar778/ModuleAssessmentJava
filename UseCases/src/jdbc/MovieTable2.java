@@ -1,3 +1,4 @@
+// 6) Use case- 6
 package jdbc;
 
 import java.sql.Connection;
