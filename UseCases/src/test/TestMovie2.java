@@ -26,7 +26,17 @@ public class TestMovie2 {
 		movieList.add(m2);
 		movieList.add(m3);
 		
-Collections.sort(movieList, new SortByRating());
+		for (int i=0;i<movieList.size()-1;i++)
+		{
+		if(movieList.get(i).getRating()<movieList.get(i+1).getRating())
+		{
+		Movie m=movieList.get(i);
+		movieList.set(i, movieList.get(i+1));
+		movieList.set(i+1, m);
+
+
+		}
+		}
 		
 		for(Movie p:movieList) {
 			p.Displayinfo();
